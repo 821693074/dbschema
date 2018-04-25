@@ -80,3 +80,9 @@ alter table `tengyue`.`mvp_user` add column `proxy_type` tinyint unsigned not nu
 `master`分支不允许直接提交，每个人在有数据变动时，需要从`master`分支创建一个自己的分支，写入变动的语句后，提交和`master`分支合并的请求。
 * 如果是新增的表结构，分支以add/xxxx形式命名；
 * 如果是修改的表结构，分支以modify/xxxx形式命名；
+
+### 快速浏览和备注schema
+```shell
+php -S 0.0.0.0:10101 index.php
+```
+保存的备注会放到desc目录，将其提交到git里边，就能永久保存备注了。
